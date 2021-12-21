@@ -1,0 +1,26 @@
+#puppy-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  animation: img-animation 4.5s ease-out ;
+  -webkit-animation: img-animation 4.5s ease-out ;
+}
+
+@keyframes img-animation {
+  0% {
+      transform: translateY(-10%);
+      opacity: 0;
+      -webkit-transform: translateY(-10%);
+      -moz-transform: translateY(-10%);
+      -ms-transform: translateY(-10%);
+      -o-transform: translateY(-10%);
+}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
