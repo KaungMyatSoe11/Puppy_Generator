@@ -10,7 +10,9 @@ app.use(express.static("public"));
 // });
 
 app.listen();
+
 const api_key = process.env.API_KEY;
+
 app.get("/random", async (req, res) => {
   const fetchResult = await (
     await axios.get("https://dog.ceo/api/breeds/image/random")
