@@ -1,20 +1,23 @@
 #puppy-img {
   width: 100%;
   height: auto;
-  max-height: 300px;
-  animation: img-animation 4.5s ease-out ;
-  -webkit-animation: img-animation 4.5s ease-out ;
+  animation: img-animation 4.5s ease-out;
+  -webkit-animation: img-animation 4.5s ease-out;
+}
+
+#img {
+  width: 100%;
 }
 
 @keyframes img-animation {
   0% {
-      transform: translateY(-10%);
-      opacity: 0;
-      -webkit-transform: translateY(-10%);
-      -moz-transform: translateY(-10%);
-      -ms-transform: translateY(-10%);
-      -o-transform: translateY(-10%);
-}
+    transform: translateY(-10%);
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+  }
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -22,5 +25,36 @@
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
+  }
 }
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+
+ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #img {
+    width: 50% !important;
+    max-height: 400px !important;
+  }
+
+  #puppy-img {
+    max-height: 400px !important;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
